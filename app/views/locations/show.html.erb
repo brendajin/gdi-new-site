@@ -62,14 +62,14 @@
         <% end %>
       </div>
 
-      <div class="profiles">
-        <% if @instructors.count != 0 %>
-          <div id="headline">
-            <%= image_tag 'apple.png' %>
-            <h2>The Instructors</h2>
-          </div>
-        <% end %>
+      <% if @instructors.count != 0 %>
+        <div id="headline">
+          <%= image_tag 'apple.png' %>
+          <h2>The Instructors</h2>
+        </div>
+      <% end %>
 
+      <div class="profiles">
         <% @instructors.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
